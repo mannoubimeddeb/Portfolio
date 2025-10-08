@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+
+  <body>
+    <main>
+      <h1>Projet: Tableau de bord d'anlyse des charges</h1>
+      <div class="container">
+        <div class="info">
+          <h2>Description</h2>
+          <p>
+            Ce tableau de bord est creer dans le cadre de mon projet au sein de
+            Laboratoires Medis dans le cadre de mon stage techincien , ce
+            tableau vise a analyser , calculer les charges de production et les
+            compares avec les capacites reelles de production des machines
+          </p>
+          <h3>Fonctionnalites principales</h3>
+          <ul>
+            <li>
+              <strong>Création et Sélection de Processus :</strong> Une
+              interface intuitive permettant de créer ou de sélectionner le
+              processus à surveiller. Configuration de paramètres essentiels,
+              comme le produit, la machine, et les tolérances spécifiques à
+              chaque processus.
+            </li>
+            <li>
+              <strong>Calcul des Capabilités : </strong> Calcul des indices de
+              capabilité (Cp, Cpk, Pp, Ppk) pour évaluer la précision et la
+              performance du processus. Affichage détaillé des capabilités et du
+              ppm (parties par million) pour un suivi précis des écarts.
+            </li>
+            <li>
+              <strong
+                >Visualisation des Cartes de Contrôle et Histogrammes : </strong
+              >Génération de cartes de contrôle pour suivre les variations du
+              processus en temps réel et détecter rapidement les anomalies.
+              Création d'histogrammes pour analyser la distribution des données
+              et vérifier leur conformité aux spécifications.
+            </li>
+            <li>
+              <strong>Commentaires et Interprétations Automatiques :</strong>
+              L'application fournit des analyses et interprétations automatiques
+              en fonction des données collectées, facilitant la prise de
+              décision. Indications sur l'etat et la situation du processus .
+            </li>
+          </ul>
+
+          <h3>technologie utilise</h3>
+          <p>
+            nterface Utilisateur : Développée avec Tkinter en Python pour une
+            interface simple d'utilisation. Base de Données : Intégration de
+            MySQL pour la gestion et l'enregistrement des processus à contrôler,
+            des mesures et des capabilités. Visualisation des Données :
+            Utilisation de matplotlib pour des graphiques
+          </p>
+        </div>
+        <div class="vid">
+          <video width="540" height="460" autoplay loop muted controls>
+            <source src="videos/tableau de bord.mp4" type="video/mp4" />
+            Votre navigateur ne supporte pas la vidéo.
+          </video>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
