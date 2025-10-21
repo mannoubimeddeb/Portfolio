@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MES</title>
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+
+  <body>
+    <main>
+      <h1>Projet : Application de Gestion de Machine</h1>
+      <div class="container">
+        <div class="info">
+          <h2>Description</h2>
+          <p>
+            L’application de gestion de machine est une solution desktop
+            développée en <strong>Python</strong>, ayant pour objectif de
+            <strong
+              >suivre et analyser le fonctionnement des machines
+              industrielles</strong
+            >. Elle s’apparente à un mini-système MES (Manufacturing Execution
+            System), permettant d’assurer un suivi en temps réel des
+            performances, d’enregistrer les états de fonctionnement, et
+            d’évaluer la productivité et la fiabilité des équipements.
+          </p>
+
+          <p>
+            Son utilité principale réside dans la
+            <strong>supervision du fonctionnement des machines</strong>, la
+            <strong>mesure des temps d’arrêt et de production</strong>, ainsi
+            que le
+            <strong
+              >calcul automatique des indicateurs de performance et de
+              maintenance</strong
+            >, afin d’optimiser la disponibilité et l’efficacité des moyens de
+            production.
+          </p>
+
+          <h3>Fonctionnement et principales fonctionnalités</h3>
+          <ul>
+            <li>
+              <strong>Enregistrement du fonctionnement machine :</strong>
+              L’application chronomètre le temps de fonctionnement de la machine
+              dans ses différents états — marche, arrêt ou panne. Elle
+              enregistre l’historique complet du fonctionnement sur une période
+              de suivi définie par l’utilisateur, tout en permettant la
+              déclaration des motifs et la description des situations
+              rencontrées.
+            </li>
+
+            <li>
+              <strong>Rapport d’état de fonctionnement :</strong>
+              À la fin de chaque période, l’application génère automatiquement
+              un rapport d’état qui affiche l’historique détaillé des états de
+              la machine (fonctionnement, panne, durée de chaque état). Ce
+              rapport cumule les temps totaux de marche et d’arrêt, et calcule
+              les indicateurs de production tels que le <strong>TRS</strong>, le
+              <strong>TRG</strong> et le <strong>TP</strong>.
+            </li>
+
+            <li>
+              <strong>Visualisation et analyse graphique :</strong>
+              L’application produit des graphiques et histogrammes globaux pour
+              visualiser les indicateurs de performance machine et faciliter
+              leur interprétation. Ces représentations visuelles permettent une
+              évaluation rapide et claire des performances globales.
+            </li>
+
+            <li>
+              <strong>Calcul des indicateurs de maintenance :</strong>
+              En enregistrant l’historique complet des pannes et arrêts,
+              l’application calcule automatiquement les indicateurs de
+              maintenance tels que le
+              <strong>MTTR (Mean Time To Repair)</strong> et le
+              <strong>MTBF (Mean Time Between Failures)</strong>, permettant
+              d’évaluer la fiabilité et la maintenabilité de la machine.
+            </li>
+          </ul>
+
+          <h3>Technologies utilisées</h3>
+          <p>
+            <strong>Langage :</strong> Python<br />
+            <strong>Interface graphique :</strong> Tkinter<br />
+            <strong>Visualisation :</strong> Matplotlib et Seaborn<br />
+            <strong>Base de données :</strong> SQLite<br />
+            <strong>IDE :</strong> VS Code
+          </p>
+        </div>
+
+        <div class="vid">
+          <div class="image_project">
+            <img src="images/MES.png" alt="Application de Gestion de Machine" />
+            <a
+              href="https://drive.google.com/file/d/1s8vIrHNd_M0yA6kpnC9J0feENPWg1a7j/view?usp=sharing"
+              target="_blank"
+              class="video-button"
+              >🎬 Voir la Vidéo</a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

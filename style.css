@@ -1,0 +1,782 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Jost", serif;
+  font-size: 14px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  background-color: blue;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 999;
+}
+.logo {
+  font-size: 30px;
+  color: white;
+  font-weight: 800;
+  margin-left: 20px;
+  cursor: pointer;
+  padding-left: 50px;
+}
+
+.navigation a {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  color: white;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-weight: 500;
+  transition: 0.7s ease;
+}
+
+.navigation a:hover {
+  color: aqua;
+}
+
+.background-video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(100%);
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 60px;
+  justify-content: space-between;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  gap: 200px;
+}
+
+.Identite {
+  width: 50%;
+  margin-left: 100px;
+}
+
+.Identite h3 {
+  color: aqua;
+  font-size: 30px;
+}
+
+.Identite h1 {
+  color: blue;
+  font-size: 60px;
+  animation: slideleft 1s ease forwards;
+}
+.Identite h2 {
+  color: rgb(0, 187, 255);
+  font-size: 40px;
+  animation: slideleft 1s ease forwards;
+}
+
+.Identite p {
+  color: black;
+}
+
+.icons {
+  display: flex;
+  margin-bottom: 25px;
+  width: 50px;
+  height: 40px;
+}
+
+.icons a {
+  color: blue;
+  font-size: 15px;
+  border-radius: 50%;
+  border: 2px solid blue;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.icons a:hover {
+  background-color: blue;
+  color: teal;
+  box-shadow: 0 0 20px blue;
+}
+.cv {
+  background-color: darkseagreen;
+  color: black;
+  border-radius: 30px;
+  padding: 10px 20px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  margin-top: 30px;
+  transition: 0.7s ease;
+}
+
+.cv:hover {
+  background-color: darkslategray;
+  transform: scale(1.1);
+}
+
+.imagemannoubi img {
+  width: 400px;
+  height: 400px;
+  margin-right: 40px;
+
+  transition: 0.7s;
+}
+
+.imagemannoubi img:hover {
+  transform: scale(1.1);
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.education {
+  justify-content: space-between;
+}
+
+.education h2 {
+  text-align: center;
+  position: relative;
+  margin-top: 50px;
+  color: blue;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.card {
+  background-color: white;
+  width: 350px;
+  height: 450px;
+  box-shadow: 0 5px 25px rgba(1, 1, 1, 25%);
+  border-radius: 20px;
+  margin: 20px;
+  margin-top: 30px;
+  transition: 0.7s ease;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.intercard {
+  text-align: center;
+}
+.card h2 {
+  color: blueviolet;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 10px;
+}
+.card h4 {
+  color: grey;
+  font-size: 15;
+  font-weight: 500;
+  margin: 10px;
+}
+
+.experiences {
+  justify-content: space-between;
+}
+
+.experiences h2 {
+  position: relative;
+  text-align: center;
+  color: blue;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.card2 {
+  background-color: white;
+  width: 400px;
+  height: 500px;
+  box-shadow: 0 5px 25px rgba(1, 1, 1, 25%);
+  border-radius: 20px;
+  margin: 10px;
+  transition: 0.7s ease;
+}
+.card2:hover {
+  transform: scale(1.1);
+}
+
+.intercard2 {
+  text-align: center;
+  margin: 10px;
+}
+
+.card2 h2 {
+  color: darkblue;
+  font-size: 25px;
+  font-weight: 600;
+  margin: 10px;
+}
+.card2 img {
+  width: 100px;
+  height: 100px;
+}
+
+.card2 h3 {
+  color: darkcyan;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 10px;
+}
+
+.card2 h4 {
+  color: darkgrey;
+  margin: 10px;
+}
+.card2 h5 {
+  font-weight: 500;
+  font-size: 15px;
+  margin: 10px;
+}
+
+.card2 ul li {
+  font: size 10px;
+  margin-left: 25px;
+}
+
+.button {
+  text-align: center;
+  margin: 5px;
+}
+.card2 a {
+  display: inline-block;
+  padding: 10px 15px;
+  background: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+.card2 a:hover {
+  background-color: #0056b3;
+}
+
+.projects {
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+}
+
+.projects h2 {
+  position: relative;
+  text-align: center;
+  color: blue;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.contentproject {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 20px;
+}
+
+.project_card {
+  flex: 0 0 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  transition: transform 0.3s;
+}
+
+.project_card:hover {
+  transform: scale(1.05);
+}
+
+.image_project img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.info_project {
+  padding: 15px;
+  text-align: center;
+}
+
+.info_project p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.info_project a {
+  display: inline-block;
+  padding: 10px 15px;
+  background: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.info_project a:hover {
+  background: #0056b3;
+}
+
+/* Style des flèches  */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
+}
+
+.arrow:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Section Compétences métiers*/
+
+.competences h2 {
+  position: relative;
+  text-align: center;
+  color: blue;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.skill-card {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  padding: 25px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.skill-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #1d3557;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.skill-card i {
+  color: #457b9d;
+  font-size: 1.4rem;
+}
+
+.skill-card ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.skill-card ul li {
+  background: #f1f5f9;
+  margin: 6px 0;
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  color: #333;
+  transition: background 0.3s;
+}
+
+.skill-card ul li:hover {
+  background: #e3edf7;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .competences {
+    padding: 60px 5%;
+  }
+
+  .skill-card h3 {
+    font-size: 1.1rem;
+  }
+}
+
+.skills h2 {
+  text-align: center;
+  position: relative;
+  margin-top: 50px;
+  color: blue;
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.software {
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  box-shadow: 0 5px 25px rgba(1, 1, 1, 25%);
+  margin: 10px;
+  transition: 0.7s ease;
+}
+
+.software:hover {
+  transform: scale(1.1);
+}
+
+.software h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #007bff;
+  text-align: center;
+  margin: 10px;
+}
+
+.software .skills_icons {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.software .item {
+  text-align: center;
+  margin: 10px;
+}
+
+.software .item img {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+.software .item:hover {
+  box-shadow: 0 0 20px grey;
+  color: gainsboro;
+}
+
+.contact h2 {
+  text-align: center;
+  position: relative;
+  margin-top: 50px;
+  color: blue;
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.references {
+  display: flex;
+}
+.card3 {
+  background-color: white;
+  width: 300px;
+  height: 300px;
+  box-shadow: 0 5px 25px rgba(1, 1, 1, 25%);
+  margin: 10px;
+  transition: 0.7s ease;
+  text-align: center;
+  padding: 20px;
+}
+
+.card3:hover {
+  transform: scale(1.1);
+}
+
+.card3 img {
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  margin: 20px;
+}
+
+.card3 h2 {
+  font-size: 20px;
+}
+.card3 p {
+  font-size: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 400px;
+}
+form input,
+form textarea,
+form button {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+form button:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #333;
+  color: white;
+}
+
+@keyframes slideleft {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+/*  Petits écrans (mobile) */
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .logo {
+    font-size: 22px;
+    margin: 10px 0;
+    padding-left: 10px;
+  }
+
+  .navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .navigation a {
+    font-size: 14px;
+    margin: 5px 10px;
+  }
+
+  section {
+    padding: 30px 15px;
+    height: auto;
+  }
+
+  .home {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .Identite {
+    width: 100%;
+    margin: 0;
+    margin-top: 120px;
+  }
+
+  .Identite h1 {
+    font-size: 30px;
+  }
+  .Identite h2 {
+    font-size: 20px;
+  }
+
+  .Identite h3 {
+    font-size: 22px;
+  }
+
+  .imagemannoubi img {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card,
+  .card2,
+  .software,
+  .card3,
+  form {
+    width: 90%;
+    height: auto;
+  }
+
+  .references {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contentproject {
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+
+  .project_card {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+  }
+
+  form {
+    width: 90%;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+}
+
+/*  Écrans moyens (tablettes) */
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  header {
+    padding: 15px 30px;
+  }
+
+  .logo {
+    font-size: 26px;
+  }
+
+  .navigation a {
+    font-size: 16px;
+    margin: 0 10px;
+  }
+
+  .home {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .Identite {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 80px;
+  }
+
+  .Identite h1 {
+    font-size: 45px;
+  }
+  .Identite h2 {
+    font-size: 30px;
+  }
+
+  .imagemannoubi img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .content {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card,
+  .card2,
+  .software,
+  .card3 {
+    width: 45%;
+    margin: 10px;
+  }
+
+  .contentproject {
+    gap: 15px;
+  }
+
+  form {
+    width: 70%;
+  }
+
+  footer {
+    font-size: 13px;
+  }
+}
